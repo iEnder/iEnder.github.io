@@ -216,8 +216,7 @@ footer span a img {
 
 canvas {
   position: absolute;
-  height: 100%;
-  top: 120px;
+  top: 0;
   left: 0;
 }
 
