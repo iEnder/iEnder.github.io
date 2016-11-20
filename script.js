@@ -18,7 +18,7 @@ $("#contactbtn").click(function() {
   $('html, body').animate({scrollTop: $("footer").offset().top}, 1000);
 });
 
-particlesJS("particle s-js", {
+particlesJS("particles-js", {
   "particles": {
     "number": {
       "value": 80,
