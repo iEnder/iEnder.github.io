@@ -1,7 +1,7 @@
 $(".typedHead").typed({
   strings: ["Seth Church"],
   typeSpeed: 70,
-  callback: function() {
+  callback: function() s{
     $('.following').animate({
       opacity: 1,
       bottom: '-25px',
