@@ -1,6 +1,1 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
-body {
-  background-color: #FCFCFC; }
-
-header {
-  background-color: #1E344D; }
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);*{font-family:"Segoe UI","Open Sans",sans-serif}body{margin:0;background-color:#fcfcfc}nav{display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-line-pack:center;align-content:center;width:90%;margin:0 auto 7em auto}nav img{width:5%;height:5%}nav ul{color:#fff;list-style-type:none;display:-ms-flexbox;display:flex}nav ul li{-ms-flex-negative:0;flex-shrink:0;margin:0 1em}nav ul li:first-child{background-color:#c62626;padding:3em 1em 1em 1em;position:relative;top:-3em}nav ul li:last-child{background-color:#4373ab;height:1em;padding:.5em;position:relative;top:-.5em}header{background-color:#1e344d;padding:2em 0 5em 0;text-align:center;color:#fff;box-shadow:inset 0 -5px 6 #000}header h1{margin:0;font-size:6em;text-shadow:0 2px 0 rgba(0,0,0,.5)}header h2{font-size:2rem;margin-bottom:5em;font-weight:300}@media (max-width:1200px){header{padding:3em 0 2.5em 0}header h2{margin-bottom:2.5em}nav{margin:0 auto 2em auto}nav img{width:7%}nav ul{display:none}}@media only screen and (min-device-width:320px) and (max-device-width:480px){nav{margin:0 auto 1em auto}nav img{width:12%}nav ul{display:none}header{padding:2em 0 1em 0}header h1{font-size:4.5em}header h2{font-size:1.5em}}

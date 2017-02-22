@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+$doc: #FCFCFC;
+$accent: #1E344D;
+$font: 'Segoe UI',
+'Open Sans',
+sans-serif;
+$path:polygon(0 0,
+100% 0,
+100% 100%,
+95% 88%,
+89% 96%,
+81% 99%,
+61% 94%,
+47% 85%,
+32% 96%,
+11% 78%,
+0 100%);
+$flatShadow: 0 2px 0 rgba(0,
+0,
+0,
+0.5);
+* {
+    font-family: $font;
+}
+
+body {
+    margin: 0;
+    background-color: $doc;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 90%;
+    margin: 0 auto 7em auto;
+    img {
+        width: 5%;
+        height: 5%;
+    }
+    ul {
+        color: white;
+        list-style-type: none;
+        display: flex;
+        li {
+            flex-shrink: 0;
+            margin: 0 1em;
+            &:first-child {
+                background-color: #C62626;
+                padding: 3em 1em 1em 1em;
+                position: relative;
+                top: -3em;
+            }
+            &:last-child {
+                background-color: #4373AB;
+                height: 1em;
+                padding: 0.5em;
+                position: relative;
+                top: -0.5em;
+            }
+        }
+    }
+}
+
+header {
+    background-color: $accent;
+    padding: 2em 0 5em 0;
+    // clip-path: $path;
+    text-align: center;
+    color: white;
+    box-shadow: inset 0 -5px 6 rgba(0, 0, 0, 1);
+    h1 {
+        margin: 0;
+        font-size: 6em;
+        text-shadow: $flatShadow;
+    }
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 5em;
+        font-weight: 300;
+    }
+}
+
+@media (max-width:1200px) {
+    header {
+        padding: 3em 0 2.5em 0;
+        h2 {
+            margin-bottom: 2.5em;
+        }
+    }
+    nav {
+        margin: 0 auto 2em auto;
+        img {
+            width: 7%;
+        }
+        ul {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    nav {
+        margin: 0 auto 1em auto;
+        img {
+            width: 12%;
+        }
+        ul {
+            display: none;
+        }
+    }
+    header {
+        padding: 2em 0 1em 0;
+        h1 {
+            font-size: 4.5em;
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+    }
+}
