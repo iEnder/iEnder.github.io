@@ -1,132 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Seth Church Web Developer</title>
-    <link href="//fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='shortcut icon' href="imgs/favicon.ico" type='image/x-icon'/ >
-    <meta name=viewport content="width=device-width, initial-scale=1">
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+
+    <!-- Google Tag Manager -->
     <script>
-      (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-          (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o)
-          , m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-      ga('create', 'UA-87806438-1', 'auto');
-      ga('send', 'pageview');
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N956CWG');
     </script>
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li id="Head"><a href="#">Seth Church</a></li>
-        <li id="portfoliobtn"><a href="#">Portfolio</a></li>
-        <li id="contactbtn"><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Seth Church Web Developer</title>
+    <meta name="description" content="Seth Church Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N956CWG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
 
     <header>
-      <div id="particles-js">
-        <div class="typedHead">Seth Church</div>
-        <div class="following">Front-End Web Developer</div>
-        <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-      </div>
+
+        <nav>
+
+        </nav>
+
     </header>
-    <section id="portfolio">
-      <h1>Portfolio</h1>
-      <div class="portfoliocontent">
-        <div class="portfolioitem">
-          <h3>Galaxy Webpage Concept</h3>
-          <img src="/imgs/galaxyimage.png" alt="Galaxy Page Image"/>
-          <div class="itemdescription"><a href="//codepen.io/pkmn9060/full/woGaWr"><button><i class="fa fa-codepen"></i></button></a>
-            <span class="skillcontainer"><span>HTML</span><span>SCSS</span></span>
-            <p>This was a school project that I made using HTML5 semantic tags and SCSS</p>
-          </div>
-        </div>
-        <div class="portfolioitem">
-          <h3>Scoreboard App</h3>
-          <img src="/imgs/scoreimage.png" alt="image of app"/>
-          <div class="itemdescription"><a href="//codepen.io/pkmn9060/full/ORGxYw/"><button><i class="fa fa-codepen"></i></button></a>
-            <span class="skillcontainer"><span>HTML</span><span>SCSS</span><span>JQuery</span></span>
-            <p>This little app was another project its a scoreboard for keeping track of personal games</p>
-          </div>
-        </div>
-        <div class="portfolioitem">
-          <h3>Javascript Calculator</h3>
-          <img src="/imgs/calcimage.png" alt="Image of calculator"/>
-          <div class="itemdescription"><a href="//codepen.io/pkmn9060/full/PGMZGX/"><button><i class="fa fa-codepen"></i></button></a>
-            <span class="skillcontainer"><span>HTML</span><span>SCSS</span><span>JQuery</span></span>
-            <p>A simple Javascript Calculator made for practice using Javascript algorithms</p>
-          </div>
-        </div>
-        <div class="portfolioitem">
-          <h3>Random Quote Generator</h3>
-          <img src="/imgs/quotemachimage.png" alt="Image of app"/>
-          <div class="itemdescription"><a href="//codepen.io/pkmn9060/full/LRzjbW/"><button><i class="fa fa-codepen"></i></button></a>
-            <span class="skillcontainer"><span>HTML</span><span>CSS</span><span>JQuery</span></span>
-            <p>Random quote generator made using the Forismatic API</p>
-          </div>
-        </div>
-        <div class="portfolioitem">
-          <h3>Wikipedia Viewer</h3>
-          <img src="/imgs/wikiimage.png" alt="Image of app"/>
-          <div class="itemdescription"><a href="//codepen.io/pkmn9060/full/rrYLWv/"><button><i class="fa fa-codepen"></i></button></a>
-            <span class="skillcontainer"><span>HTML</span><span>SCSS</span><span>JQuery</span></span>
-            <p>A Redesigned Wikipedia search display using the Wikipedia API</p>
-          </div>
-        </div>
-        <div class="portfolioitem">
-          <h3>Checkout Modal UI Concept</h3>
-          <img src="/imgs/checkoutimage.png" alt="image of app" />
-          <div class="itemdescription"><a href="//s.codepen.io/pkmn9060/debug/JbRXyz"><button><i class="fa fa-codepen"></i></button></a>
-            <span class="skillcontainer"><span>HTML</span><span>SCSS</span><span>JQuery</span></span>
-            <p>This UI concept was made for the DailyUI challenge it also shows off some CSS animation</p>
-          </div>
-        </div>
-        <div class="portfolioitem">
-          <h3>React Pomodoro Clock</h3>
-          <img src="/imgs/pomodoro.png" alt="image of app" />
-          <div class="itemdescription"><a href="//codepen.io/pkmn9060/full/pNdzvp/"><button><i class="fa fa-codepen"></i></button></a>
-            <span class="skillcontainer"><span>HTML</span><span>SCSS</span><span>React</span></span>
-            <p>A FCC Project I made using using React to learn the concepts</p>
-          </div>
-        </div>
-        <div class="portfolioitem">
-          <h3>BB Bans Page</h3>
-          <img src="/imgs/bbbans.png" alt="image of app" />
-          <div class="itemdescription"><a href="//codepen.io/pkmn9060/full/wgvWqQ/"><button><i class="fa fa-codepen"></i></button></a>
-            <span class="skillcontainer"><span>HTML</span><span>SCSS</span><span>JS</span></span>
-            <p>This is a design I made for a servers ban page some inspriation taken from Google's Material Design</p>
-          </div>
-        </div>
-      </div>
-      </div>
-    </section>
-  <footer>
-    <span>
-      <h3>Find me on the Web</h3>
-      <a href="https://www.freecodecamp.com/pkmn9060">
-        <img src="/imgs/freecodecamp.png" /></a>
-      <a href="https://github.com/pkmn9060">
-        <img src="/imgs/GitHub-Mark.png" />
-      </a>
-      <a href="https://codepen.io/pkmn9060/">
-        <img style="height: 48px;" src="/imgs/codepen.jpg" />
-      </a>
-    </span>
-    <span><h2>Contact me At</h2><h3>sethcdev@gmail.com</h3></span>
-  </footer>
-  <script src="/JS/jquery.min.js"></script>
-  <script src="/JS/typed.min.js"></script>
-  <script src="/JS/particles.min.js"></script>
-  <script src="script.min.js"></script>
-  </body>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
 </html>

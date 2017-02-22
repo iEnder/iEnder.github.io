@@ -1,0 +1,27 @@
+{
+    "name": "Seth Church Portfolio",
+    "version": "0.0.0",
+    "description": "My personal Web developer Portfolio",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Seth Church",
+    "license": "ISC",
+    "devDependencies": {
+        "gulp": "^3.8.8",
+        "gulp-sass": "^2.1.0",
+        "browser-sync": "^1.3.7",
+        "gulp-autoprefixer": "1.0.0"
+    },
+    "keywords": [
+        "jekyll",
+        "gulp",
+        "sass",
+        "browsersync"
+    ],
+    "bugs": {
+        "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync/issues"
+    },
+    "homepage": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync"
+}
