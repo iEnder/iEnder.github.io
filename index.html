@@ -31,6 +31,7 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -47,25 +48,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-    <header>
+    <header class="main-header">
 
-        <nav>
-            <img src="\imgs\portfolio-logo-material.png" alt="Seth's Logo'">
-            <ul id="navContainer">
-                <li class="navItem">Home</li>
-                <li class="navItem">About</li>
-                <li class="navItem">Portfolio</li>
-                <li class="navItem">Hire Me</li>
+        <nav class="navigation">
+
+            <img class="navigation__logo" src="\imgs\portfolio-logo-material.png" alt="Seth's Logo'">
+
+            <ul id="navigationList">
+                <li class="navigation__navItem">Home</li>
+                <li class="navigation__navItem">About</li>
+                <li class="navigation__navItem">Portfolio</li>
+                <li class="navigation__navItem">Hire Me</li>
             </ul>
+
+            <button class="navigation__toggle"><i class="material-icons navigation__toggle--icon">menu</i></button>
+
         </nav>
 
-        <h1>Seth Church</h1>
-        <h2>Font End Web Developer</h2>
+        <h1 class=" main-header__text ">Seth Church</h1>
+        <h2 class="main-header__subtext ">Font End Web Developer</h2>
 
     </header>
+    <!-- END Header -->
 
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/plugins.js "></script>
+    <script src="js/main.js "></script>
 
 </body>
 
