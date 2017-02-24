@@ -7,7 +7,12 @@
 
 body {
     margin: 0;
-    background-color: $bg-color;
+    background-color: darken(#fff, 2%);
+}
+
+.pre-nav {
+    max-height: 0px;
+    transition: max-height 0.7s ease;
 }
 
 .navigation {
@@ -50,8 +55,9 @@ body {
 
 .main-header {
     background-color: $main-color;
+    background-image: url("/assets/header-bg.png");
     padding: 2em 0 5em 0;
-    // clip-path: $path;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 95% 88%, 89% 96%, 81% 99%, 61% 94%, 47% 85%, 32% 96%, 11% 78%, 0 100%);
     text-align: center;
     color: white;
     box-shadow: inset 0 -5px 6 rgba(0, 0, 0, 1);
@@ -69,6 +75,24 @@ body {
 }
 
 @media (max-width:1100px) {
+    .pre-nav {
+        max-height: 0px;
+        display: block;
+        list-style-type: none;
+        text-align: center;
+        background-color: #333;
+        color: white;
+        .pre-nav__navItem {
+            display: block;
+            padding: 0.5em 0;
+            &:nth-child(2n) {
+                background-color: #555;
+            }
+        }
+        &.pre-nav--active {
+            max-height: 9999px;
+        }
+    }
     .main-header {
         padding: 3em 0 2.5em 0;
         &__subtext {
@@ -85,46 +109,30 @@ body {
         ul {
             display: none;
         }
-        .menu-active {
-            display: block;
-            position: absolute;
-            z-index: 999;
-            width: 15%;
-            background-color: $main-color;
-            border: 1px solid darken($main-color, 10%);
-            right: 2%;
-            top: 14%;
-            padding: 0;
-            margin: 0;
-            li {
-                top: 0;
-                background-color: transparent;
-                padding: 0.7em 0;
-                display: block;
-                margin: 0;
-                background-color: $main-color;
-                &:not(:last-child) {
-                    border-bottom: 1px solid darken($main-color, 10%);
-                }
-            }
-        }
         &__toggle {
+            transition: 0.5s;
             display: block;
             position: relative;
             top: -5px;
             right: 10px;
-            background-color: darken(#274363, 10%);
+            background-color: #214084;
             height: 2.5em;
             width: 4em;
-            border: 2px lighten(#274363, 10%) solid;
+            border: 2px lighten(#214084, 15%) solid;
             border-radius: 0.3em;
             box-shadow: $flat-shadow;
+            transform: translateZ(0);
+            backface-visibility: hidden;
             &--icon {
-                color: lighten(#274363, 10%);
+                color: lighten(#274363, 5%);
                 line-height: 1.25em;
             }
             &:focus {
                 outline: 0;
+            }
+            &:hover {
+                background-color: darken(#214084, 5%);
+                box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
             }
         }
     }
@@ -133,15 +141,14 @@ body {
 @media (max-width:850px) {
     .main-header {
         margin-bottom: 2em;
-    }
-    .navigation {
-        .menu-active {
-            width: 20%;
-        }
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 91% 90%, 86% 96%, 73% 100%, 51% 96%, 36% 89%, 23% 98%, 8% 88%, 0 100%);
     }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+    .main-header {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 94% 91%, 88% 96%, 73% 100%, 53% 97%, 42% 90%, 31% 100%, 11% 91%, 0 100%);
+    }
     .navigation {
         margin: 0 auto 1em auto;
         &__logo {
