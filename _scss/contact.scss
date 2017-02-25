@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 1em;
     &__header {
         display: flex;
         align-items: center;
@@ -44,7 +45,7 @@
         textarea {
             margin-bottom: 1em;
             &.invalid {
-                box-shadow: 0 0 6px red;
+                border: 2px solid red;
             }
         }
         &__split-group {
@@ -102,6 +103,17 @@
             &__submit {
                 width: 30%;
             }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        .contactForm {
+            &__section-header {
+                left: 0;
+            }
+            width: 80%;
         }
     }
 }

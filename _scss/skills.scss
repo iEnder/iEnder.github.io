@@ -38,12 +38,13 @@
             background-color: rgba(30, 52, 77, 0.5);
             color: white;
             font-family: $font;
-            font-size: 100%;
+            font-size: 2em;
             font-weight: 600;
             opacity: 0;
         }
         img {
             width: 100%;
+            height: calc(100vw/4);
             display: block;
         }
         &:hover>&__overlay {
@@ -56,6 +57,9 @@
     .skills {
         &__images {
             width: 12.5%;
+        }
+        img {
+            height: calc(100vw/8);
         }
     }
 }

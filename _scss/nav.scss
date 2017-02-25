@@ -11,6 +11,7 @@ body {
 }
 
 .pre-nav {
+    overflow: hidden;
     max-height: 0px;
     transition: max-height 0.7s ease;
 }
@@ -60,7 +61,6 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 95% 88%, 89% 96%, 81% 99%, 61% 94%, 47% 85%, 32% 96%, 11% 78%, 0 100%);
     text-align: center;
     color: white;
-    box-shadow: inset 0 -5px 6 rgba(0, 0, 0, 1);
     margin-bottom: 3em;
     &__text {
         margin: 0;
