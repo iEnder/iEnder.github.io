@@ -14,7 +14,7 @@ collapsePortfolio.addEventListener('click', () => {
 window.addEventListener('scroll', () => {
     if (this.scrollY > 750) {
         portfolioItems.forEach((el, index) => {
-            setTimeout(() => el.classList.add(...["animated", "fadeInUp"]), 50 * index)
+            setTimeout(() => el.classList.add(...["animated", "fadeInUp"]), 200 * index)
         })
         window.removeEventListener('scroll', false);
     }
@@ -29,7 +29,7 @@ function validateForm(form) {
 
     formInputs.forEach((el) => {
 
-        let elIsInvalid = false; // bool for this elements (el)'s correctness 
+        let elIsInvalid = false; // bool for this elements (el)'s correctness
         if (el.dataset.required == "true" && el.value == "") { //if the input is required and and value is empty set to invalid
             elIsInvalid = true;
         }
