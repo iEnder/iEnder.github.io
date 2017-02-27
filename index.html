@@ -49,23 +49,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
     <section class="pre-nav">
-        <li class="pre-nav__navItem">Home</li>
-        <li class="pre-nav__navItem">About</li>
-        <li class="pre-nav__navItem">Portfolio</li>
-        <li class="pre-nav__navItem">Hire Me</li>
+        <a href="#home" class="pre-nav__navItem">
+            <li>Home</li>
+        </a>
+        <a href="#about" class="pre-nav__navItem">
+            <li>About</li>
+        </a>
+        <a href="#portfolio" class="pre-nav__navItem">
+            <li>Portfolio</li>
+        </a>
+        <a href="#contact" class="pre-nav__navItem">
+            <li>Hire Me</li>
+        </a>
     </section>
 
-    <header class="main-header">
+    <header id="home" class="main-header">
 
         <nav class="navigation">
 
             <img class="navigation__logo" src="\assets\portfolio-logo-material.png " alt="Seth 's Logo' ">
 
             <ul id="navigationList">
-                <li class="navigation__navItem">Home</li>
-                <li class="navigation__navItem">About</li>
-                <li class="navigation__navItem">Portfolio</li>
-                <li class="navigation__navItem">Hire Me</li>
+                <a href="#home" class="navigation__navItem">
+                    <li>Home</li>
+                </a>
+                <a href="#about" class="navigation__navItem">
+                    <li>About</li>
+                </a>
+                <a href="#portfolio" class="navigation__navItem">
+                    <li>Portfolio</li>
+                </a>
+                <a href="#contact" class="navigation__navItem">
+                    <li>Hire Me</li>
+                </a>
             </ul>
 
             <button class="navigation__toggle"><i class="material-icons navigation__toggle--icon ">menu</i></button>
@@ -78,13 +94,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </header>
     <!-- END Header -->
 
-    <section class="about">
+    <section id="about" class="about">
 
         <h2 class="about__header">
             <span></span>About<span></span>
         </h2>
         <p class="about__text">
-            Hi, I'm Seth a Front End web developer based in North Carolina. I am proficent in many languages and build tools but as always am continuing learning everyday.
+            Hi, I'm Seth a Front End web developer based in North Carolina. I am proficent in many languages and build tools but as always am continuing to learn everyday.
         </p>
 
     </section>
@@ -135,7 +151,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     </section>
 
-    <section class="portfolio">
+    <section id="prortfolio" class="portfolio">
 
         <h2 class="portfolio__header">
             <span></span> Portfolio
@@ -158,7 +174,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <button class="portfolio__collapse-btn"><i class="material-icons">&#xE5CB;</i></button>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
 
         <h2 class="contact__header">
             <span></span> Hire Me <span></span>
