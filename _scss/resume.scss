@@ -18,6 +18,11 @@
             border: 1px solid $main-color;
         }
     }
+    &__container {
+        width: 55%;
+        height: 100px;
+        overflow: hidden;
+    }
     &__content {
         width: 45%;
     }
