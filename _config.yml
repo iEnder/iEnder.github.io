@@ -1,3 +1,0 @@
-name: Seth Church Portfolio
-markdown: redcarpet
-exclude: ["node_modules", "gulpfile.js", "package.json"]
