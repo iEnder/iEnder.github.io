@@ -3,7 +3,7 @@ try {
         const portfolioEl = document.querySelector('.portfolio__wrapper');
         const portfolioToggleBtn = document.querySelector('.portfolio__collapse-btn');
         const mobileMenu = document.querySelector('#mobileMenu');
-        const mobileMenuToggle = document.querySelectorAll('#mobileMenuToggle');
+        const mobileMenuToggle = document.querySelectorAll('.mobileMenuToggle');
         const navbar = document.querySelector('#nav');
 
         portfolioToggleBtn.addEventListener('click', () => {
