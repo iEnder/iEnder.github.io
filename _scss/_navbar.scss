@@ -21,18 +21,18 @@
             position: relative;
             font-size: 1.4em;
             font-weight: 900;
-            &.active:after {
-                content: ' ';
-                display: block;
-                position: relative;
-                width: 0px;
-                height: 6px;
-                background-color: white;
-                left: 50%;
-                transform: translateX(-50%);
-                animation: openBar 0.5s cubic-bezier(0.73, 0.1, 0.19, 0.9);
-                animation-fill-mode: forwards;
-            }
+            // &.active:after {
+            //     content: ' ';
+            //     display: block;
+            //     position: relative;
+            //     width: 0px;
+            //     height: 6px;
+            //     background-color: white;
+            //     left: 50%;
+            //     transform: translateX(-50%);
+            //     animation: openBar 0.5s cubic-bezier(0.73, 0.1, 0.19, 0.9);
+            //     animation-fill-mode: forwards;
+            // }
             &.active {
                 margin-bottom: -6px;
             }
