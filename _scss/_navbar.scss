@@ -90,13 +90,13 @@
 .mobile-nav {
     transition: 0.5s cubic-bezier(0.73, 0.07, 0.19, 0.9);
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 9999;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #383838;
-    top: -8%;
+    top: -100%;
     &.active {
         top: 0%;
     }
@@ -159,6 +159,15 @@
             }
             &__mobile-btn {
                 display: block;
+            }
+        }
+        &.fixed {
+            margin: 0;
+            .nav-list {
+                &__mobile-btn {
+                    background-color: #288AAD;
+                    border-color: darken(#288AAD, 5%);
+                }
             }
         }
     }
